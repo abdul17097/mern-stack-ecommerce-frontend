@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background-color: #F8F8F8;
+    user-select: none;
+}
+
+.userTable{
+    @apply bg-white rounded-md
+}
+
+.userTable th{
+    @apply px-4 py-4  border-b-2 border-gray-300 text-left text-sm font-medium text-gray-700 capitalize tracking-wider
+}
+
+.userTable td{
+    @apply px-4 py-3 border-b border-gray-200 text-sm  text-gray-900
+}
+
+.scrollbar::-webkit-scrollbar{
+    scroll-behavior: smooth;
+    @apply bg-transparent w-1
+}
+.scrollbar::-webkit-scrollbar-thumb{
+    @apply bg-slate-300
+}
+
+.gradient-color{
+    background: linear-gradient(89.84deg, rgba(230, 36, 174, .15) .34%, rgba(94, 58, 255, .15) 16.96%, rgba(10, 136, 255, .15) 34.66%, rgba(75, 191, 80, .15) 50.12%, rgba(137, 206, 0, .15) 66.22%, rgba(239, 183, 0, .15) 82%, rgba(246, 73, 0, .15) 99.9%)
+}
